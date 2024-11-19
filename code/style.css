@@ -1,0 +1,26 @@
+html {
+  background: #f2f1f4;
+  color: #19171c;
+}
+/* Dölj alla .description-divar som standard */
+.description {
+  display: none;
+}
+
+/* Markera att .title är klickbar */
+.title {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #f2f2f2;
+  margin-top: 5px;
+}
+
+.title:hover {
+  background-color: #e0e0e0;
+}
+
+/* Använd den "adjacent" selektorn för att visa närmaste .description om .title är .active */
+.title.active + .description {
+  display: block;
+}
